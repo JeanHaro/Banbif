@@ -14,33 +14,45 @@
     <title>Banbif</title>
 </head>
 <body>
-    <main class="cart min-width">
+    <main class="cart min-width max-width">
         <section class="cart__home">
             <div class="cart__home-top">
                 <img src="img/logo.jpg" alt="Logo">
     
                 <div class="cart__home-return">
-                    <img src="img/chevron-left.svg" alt="Flecha de izquierda">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                    </svg>
+
                     <p>Volver</p>
                 </div><!-- Return -->
             </div><!-- Top -->
 
             <div class="cart__home-bottom mobile">
                 <div class="cart__home-nav">
-                    <div class="line"></div>
+                    <div class="cart__home-line"></div>
 
-                    <a class="cart__home-link">
-                        <p class="cart__home-number">1</p>
+                    <a class="cart__home-link active">
+                        <div class="cart__link-circle">
+                            <p class="cart__link-number">1</p>
+                        </div>
+                        
                         <p>Tus Datos</p>
                     </a>
                     
                     <a class="cart__home-link">
-                        <p class="cart__home-number">2</p>
+                        <div class="cart__link-circle">
+                            <p class="cart__link-number">2</p>
+                        </div>
+
                         <p>Tu producto</p>
                     </a>
 
                     <a class="cart__home-link">
-                        <p class="cart__home-number">3</p>
+                        <div class="cart__link-circle">
+                            <p class="cart__link-number">3</p>
+                        </div>
+
                         <p>¡Todo Listo!</p>
                     </a>
                 </div><!-- Enlaces -->
@@ -51,9 +63,7 @@
                 <div class="cart__home-about">
                     <img src="img/card.png" alt="Tarjeta Visa">
 
-                    <div class="cart__home-info">
-                        <h4>Tienes una tarjeta Visa Clásica con $17,00 de línea.</h4>
-                    </div><!-- Info -->
+                    <h4>Tienes una tarjeta Visa Clásica con $17,00 de línea.</h4>
                 </div><!-- About -->
             </div><!-- Home mobile -->
 
@@ -64,30 +74,36 @@
                     <h4><span>¡Kevin!</span> Estas cerca de conseguir tu Tarjeta Visa Clásica</h4>
 
                     <div class="cart__home-nav">
-                        <div class="line"></div>
+                        <div class="cart__home-line"></div>
     
-                        <a class="cart__home-link">
-                            <p class="cart__home-number">1</p>
+                        <a class="cart__home-link active">
+                            <div class="cart__link-circle">
+                                <p class="cart__link-number">1</p>
+                            </div>
 
-                            <div class="cart__home-option">
+                            <div class="cart__link-option">
                                 <p>Tus Datos</p>
                                 <span>Verificamos tu identidad</span>
                             </div><!-- Opción -->
                         </a><!-- Enlace -->
                         
                         <a class="cart__home-link">
-                            <p class="cart__home-number">2</p>
+                            <div class="cart__link-circle">
+                                <p class="cart__link-number">2</p>
+                            </div>
 
-                            <div class="cart__home-option">
+                            <div class="cart__link-option">
                                 <p>Tu producto</p>
                                 <span>Descubre sus beneficios y promociones</span>
                             </div><!-- Opción -->
                         </a><!-- Enlace -->
     
                         <a class="cart__home-link">
-                            <p class="cart__home-number">3</p>
+                            <div class="cart__link-circle">
+                                <p class="cart__link-number">3</p>
+                            </div>
 
-                            <div class="cart__home-option">
+                            <div class="cart__link-option">
                                 <p>¡Todo Listo!</p>
                             </div><!-- Opción -->
                         </a><!-- Enlace -->
@@ -99,11 +115,11 @@
         <section class="cart__view">
             <form class="cart__view-data">
                 <div class="cart__data-title desktop">
-                    <h2>Hola</h2> 
-                    <p>Kevin</p>
+                    <h2>Hola <span>Kevin</span></h2> 
+                    
                 </div><!-- Titulo -->
     
-                <p>Por tu seguridad, ayúdanos a verificar tu identidad respondiendo algunas preguntas:</p>
+                <p class="cart__data-text">Por tu seguridad, ayúdanos a verificar tu identidad respondiendo algunas preguntas:</p>
             
                 <div class="cart__data-questions">
                     <div class="cart__data-question">
@@ -111,14 +127,14 @@
                     
                         <div class="cart__data-answers">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <input class="form-check-input" type="radio" name="answer1" id="flexRadioDefault1" checked>
                                 <label class="form-check-label" for="flexRadioDefault1">
                                     Si
                                 </label>
                             </div>
 
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <input class="form-check-input" type="radio" name="answer1" id="flexRadioDefault2">
                                 <label class="form-check-label" for="flexRadioDefault2">
                                     No
                                 </label>
@@ -131,14 +147,14 @@
                     
                         <div class="cart__data-answers">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <input class="form-check-input" type="radio" name="answer2" id="flexRadioDefault1" checked>
                                 <label class="form-check-label" for="flexRadioDefault1">
                                     Si
                                 </label>
                             </div>
 
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <input class="form-check-input" type="radio" name="answer2" id="flexRadioDefault2">
                                 <label class="form-check-label" for="flexRadioDefault2">
                                     No
                                 </label>
@@ -150,12 +166,16 @@
                         <p>3. ¿Hasta febrero del 2021 cuántas tarjetas de crédito tiene activa? considere también las tarjetas de crédito con saldo cero</p>
                     
                         <div class="cart__data-answers">
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Open this select menu</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
+                            <select class="form-select form-select-lg mb-3" aria-label="Default select example">
+                                <option selected disabled>Elegir</option>
+                                <option value="1">5 tarjetas de créditos</option>
+                                <option value="2">3 tarjetas de créditos</option>
+                                <option value="3">2 tarjetas de créditos</option>
                             </select>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                            </svg>
                         </div><!-- Respuesta -->
                     </div><!-- Pregunta -->
 
@@ -163,12 +183,16 @@
                         <p>4. ¿Su dependencia tributaria pertenece a Lima o provincia?</p>
                     
                         <div class="cart__data-answers">
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Open this select menu</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
+                            <select class="form-select form-select-lg mb-3" aria-label="Default select example">
+                                <option selected disabled>Elegir</option>
+                                <option value="1">Lima</option>
+                                <option value="2">Trujillo</option>
+                                <option value="3">Piura</option>
                             </select>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                            </svg>
                         </div><!-- Respuesta -->
                     </div><!-- Pregunta -->
                 
@@ -177,14 +201,14 @@
                     
                         <div class="cart__data-answers">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
                                 <label class="form-check-label" for="flexRadioDefault1">
                                     Si
                                 </label>
                             </div>
 
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                                 <label class="form-check-label" for="flexRadioDefault2">
                                     No
                                 </label>
@@ -195,14 +219,6 @@
 
                 <button type="button">Siguiente</button>
             </form><!-- Formulario-->
-
-            <div class="cart__view-products">
-                <p>Tu producto</p>
-            </div>
-
-            <div class="cart__view-finish">
-                <p>¡TODO LISTO!</p>
-            </div>
         </section><!-- Vistas -->
     </main><!-- Carrito -->
 </body>
